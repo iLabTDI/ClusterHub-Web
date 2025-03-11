@@ -32,24 +32,19 @@ const NavBar = () => {
               </a>
             </li>
             <li>
-              <a href="#about" onClick={(e) => handleSmoothScroll(e, "about")}>
-                Acerca de
+              <a
+                href="#problematica"
+                onClick={(e) => handleSmoothScroll(e, "problematica")}
+              >
+                Problemática
               </a>
             </li>
             <li>
               <a
-                href="#services"
-                onClick={(e) => handleSmoothScroll(e, "services")}
+                href="#caracteristicas"
+                onClick={(e) => handleSmoothScroll(e, "caracteristicas")}
               >
-                Servicios
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                onClick={(e) => handleSmoothScroll(e, "contact")}
-              >
-                Contacto
+                Características
               </a>
             </li>
           </ul>

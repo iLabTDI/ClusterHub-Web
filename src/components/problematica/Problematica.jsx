@@ -11,20 +11,23 @@ const Problematica = () => {
         "url('https://via.placeholder.com/800x600/FF5733/FFFFFF')",
     },
     {
-      title: "Problema 2",
-      description: "Descripción breve del problema 2.",
+      title: "Ineficiencia energética",
+      description:
+        "El consumo excesivo de energía impacta al medio ambiente y genera costos innecesarios para las familias.",
       backgroundImage:
         "url('https://via.placeholder.com/800x600/C70039/FFFFFF')",
     },
     {
-      title: "Problema 3",
-      description: "Descripción breve del problema 3.",
+      title: "Falta de monitoreo ambiental",
+      description:
+        "La calidad del aire interior, temperatura y ventilación afectan directamente la salud y bienestar, pero rara vez se monitorean.",
       backgroundImage:
         "url('https://via.placeholder.com/800x600/900C3F/FFFFFF')",
     },
     {
-      title: "Problema 4",
-      description: "Descripción breve del problema 4.",
+      title: "Sistemas de alerta reactivos",
+      description:
+        "Los sistemas convencionales alertan después de que ocurre un problema, cuando puede ser demasiado tarde para prevenir daños.",
       backgroundImage:
         "url('https://via.placeholder.com/800x600/581845/FFFFFF')",
     },
@@ -55,6 +58,7 @@ const Problematica = () => {
           ))}
         </div>
       </div>
+      <div className="suelo"></div>
     </section>
   );
 };
