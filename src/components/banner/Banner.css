@@ -1,14 +1,177 @@
-.warning {
-  position: relative;
-  background: url("../../assets/Cluster-Warning.png");
+.container-banner {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  background-color: #669bbc;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  gap: 40px;
   color: white;
   text-align: center;
-  z-index: 0;
+  padding: 20px; /* Espaciado interno para dispositivos pequeños */
+}
+
+.TextBanner {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  justify-content: left;
+  text-align: left;
+}
+
+.TextBanner h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px; /* Espaciado inferior para separar del párrafo */
+}
+
+.TextBanner p {
+  margin-top: 3%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 20px 0; /* Reducir el padding en dispositivos pequeños */
+  justify-content: flex-start; /* Alinear botones a la izquierda */
+  gap: 20px; /* Espacio entre botones */
+}
+
+.btn-custom,
+.btn-outline {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 14px 34px;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.btn-custom {
+  background-color: #20558d;
+  background-image: linear-gradient(to right, #20558d 0%, #6372ff 100%);
+  border: 0;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom.active {
+  color: #fff;
+  background-image: none;
+  background-color: #6372ff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom:active,
+.btn-custom.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  transform: scale(0.95);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline.focus,
+.btn-outline:active,
+.btn-outline.active {
+  color: #20558d;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-outline:active,
+.btn-outline.active {
+  transform: scale(0.95);
+}
+
+.imagen-principal {
+  width: 100%; /* Hacer la imagen responsive */
+  max-width: 500px; /* Tamaño máximo */
+  mix-blend-mode: lighten;
+  padding: 20px; /* Reducir el padding en dispositivos pequeños */
+}
+
+/* Media Queries para Responsive Design */
+
+/* Para tablets */
+@media (max-width: 768px) {
+  .container-banner {
+    flex-direction: column; /* Cambiar a disposición vertical */
+    text-align: center; /* Centrar el texto */
+    gap: 20px; /* Reducir el espacio entre elementos */
+  }
+
+  .TextBanner {
+    text-align: center; /* Centrar el texto en tablets */
+    max-width: 100%; /* Ocupar todo el ancho disponible */
+  }
+
+  .TextBanner h1 {
+    font-size: 1.8rem; /* Reducir el tamaño del título */
+  }
+
+  .TextBanner p {
+    font-size: 1rem; /* Reducir el tamaño del párrafo */
+  }
+
+  .botones {
+    justify-content: center; /* Centrar botones en tablets */
+  }
+
+  .imagen-principal {
+    max-width: 400px; /* Reducir el tamaño de la imagen */
+  }
+}
+
+/* Para móviles */
+@media (max-width: 480px) {
+  .container-banner {
+    padding: 10px;
+  }
+
+  .TextBanner h1 {
+    font-size: 1.5rem;
+    margin-top: 10%;
+  }
+
+  .TextBanner p {
+    font-size: 0.9rem; /* Tamaño más pequeño para móviles */
+  }
+
+  .botones {
+    flex-direction: column; /* Botones en columna en móviles */
+    gap: 10px; /* Reducir el espacio entre botones */
+  }
+
+  .btn-custom,
+  .btn-outline {
+    width: 100%; /* Botones ocupen todo el ancho */
+    padding: 12px 24px; /* Ajustar el padding */
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+  }
+
+  .imagen-principal {
+    max-width: 300px; /* Reducir el tamaño de la imagen */
+  }
 }
