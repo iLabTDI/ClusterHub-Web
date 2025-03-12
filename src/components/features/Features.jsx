@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./Features.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import captura1 from "../../assets/images/captura1.jpg";
 
 // Componente reutilizable para el ícono de check
 const CheckIcon = () => (
@@ -23,31 +24,35 @@ const FeatureArea = ({ title, description, items, color, image }) => {
       transition={{ duration: 0.5 }}
     >
       <div className="Figura-Container">
-        <motion.div
-          className="cuadrado1"
-          style={{ backgroundColor: color }}
-          initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
-          whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        ></motion.div>
-        <motion.div
-          className="circulo1"
-          style={{ backgroundColor: color }}
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        ></motion.div>
-        <motion.img
-          src={image}
-          alt={title}
-          className="feature-image"
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-        />
+        <div className="FiguresFT">
+          <motion.div
+            className="cuadrado1"
+            style={{ backgroundColor: color }}
+            initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
+            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          ></motion.div>
+          <motion.div
+            className="circulo1"
+            style={{ backgroundColor: color }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          ></motion.div>
+        </div>
+        <div className="ImageFT">
+          <motion.img
+            src={image}
+            alt={title}
+            className="feature-image"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          />
+        </div>
       </div>
       <motion.div
         className="features-text"
@@ -91,7 +96,7 @@ const featuresData = [
       "Detección de humo y fuego",
     ],
     color: "#41b658", // Verde
-    image: "monitoreo.png",
+    image: captura1,
   },
   {
     title: "IA Predictiva y Autónoma",

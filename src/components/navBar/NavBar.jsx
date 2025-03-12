@@ -47,6 +47,19 @@ const NavBar = () => {
                 Características
               </a>
             </li>
+            <li>
+              <a href="#caso" onClick={(e) => handleSmoothScroll(e, "caso")}>
+                Caso de Uso
+              </a>
+            </li>
+            <li>
+              <a
+                href="#negocio"
+                onClick={(e) => handleSmoothScroll(e, "negocio")}
+              >
+                Modelo de Negocio
+              </a>
+            </li>
           </ul>
         </div>
         <div className="navbar-toggle" onClick={toggleMenu}>

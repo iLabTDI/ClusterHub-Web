@@ -1,0 +1,117 @@
+.caso-container {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  background-color: #669bbc;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos de titulo */
+.titulo-caso h2 {
+  color: white;
+  font-size: 2.5rem;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.titulo-caso p {
+  font-size: 1.2rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInUp 1s ease-out forwards 0.3s;
+}
+
+/* Estilos del contenido */
+
+.caso-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.caso-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+}
+
+.caso-content-text h3 {
+  text-align: left;
+  padding-bottom: 1%;
+}
+
+.caso-content-text p {
+  text-align: left;
+}
+
+/* Estilos de pasos */
+
+.step {
+  display: flex;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+  padding-top: 2%;
+}
+
+.step-number {
+  background-color: #00c48c;
+  color: var(--white);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.step-content h4 {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+/* Estilo de imagen principal */
+.caso-content-image {
+  max-width: 500px;
+  padding: 10px;
+}
+
+.lista {
+  list-style: none;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .titulo-caso h2 {
+    font-size: 1.5rem;
+  }
+
+  .caso-content {
+    flex-direction: column;
+  }
+
+  .caso-content-image {
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  .caso-content-text {
+    width: 100%;
+  }
+}
