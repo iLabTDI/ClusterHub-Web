@@ -4,6 +4,8 @@ import "./Features.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import captura1 from "../../assets/images/captura1.jpg";
+import Captura2 from "../../assets/images/Analisis.png";
+import Captura3 from "../../assets/images/Clima.jpg";
 
 // Componente reutilizable para el ícono de check
 const CheckIcon = () => (
@@ -109,7 +111,7 @@ const featuresData = [
       "Acciones preventivas",
     ],
     color: "#fcc003", // Rojo
-    image: "ia.png",
+    image: Captura2,
   },
   {
     title: "Control Inteligente del Hogar",
@@ -122,7 +124,7 @@ const featuresData = [
       "Aspersores contra incendios",
     ],
     color: "#4ecdc4", // Turquesa
-    image: "control.png",
+    image: Captura3,
   },
 ];
 

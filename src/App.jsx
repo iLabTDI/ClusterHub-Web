@@ -6,6 +6,7 @@ import FeaturesSection from "./components/features/Features";
 import Caso from "./components/caso/Caso";
 import Negocio from "./components/negocio/Negocio";
 import Informacion from "./components/informacion/Informacion";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Caso />
       <Negocio />
       <Informacion />
+      <Footer />
     </div>
   );
 };

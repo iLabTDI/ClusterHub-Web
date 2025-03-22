@@ -1,0 +1,219 @@
+.footer {
+  background-color: #004b75;
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-item i {
+  font-size: 1.2rem;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #5ca9fb;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #5ca9fb;
+}
+
+.social-links i {
+  font-size: 1.5rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-logos img {
+  height: 50px;
+  width: auto;
+  mix-blend-mode: lighten;
+}
+
+.logo-tdi {
+  height: 60px;
+}
+
+.logo-cucei {
+  height: 70px;
+}
+
+.logo-division {
+  height: 50px;
+}
+
+.logo-proto {
+  height: 60px;
+}
+
+.legal-links {
+  margin-top: 10px;
+}
+
+.legal-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.legal-links a:hover {
+  color: #5ca9fb;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  .social-links {
+    align-items: center;
+  }
+
+  .footer-logos {
+    flex-wrap: wrap;
+  }
+
+  .footer-logos img {
+    height: 40px;
+  }
+
+  .logo-tdi {
+    height: 50px;
+  }
+
+  .logo-cucei {
+    height: 60px;
+  }
+
+  .logo-division {
+    height: 40px;
+  }
+
+  .logo-proto {
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .contact-item p {
+    font-size: 0.8rem;
+  }
+
+  .social-links a {
+    font-size: 0.9rem;
+  }
+
+  .footer-logos img {
+    height: 30px;
+  }
+
+  .logo-tdi {
+    height: 40px;
+  }
+
+  .logo-cucei {
+    height: 50px;
+  }
+
+  .logo-division {
+    height: 30px;
+  }
+
+  .logo-proto {
+    height: 40px;
+  }
+}

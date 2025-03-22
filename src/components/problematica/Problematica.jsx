@@ -1,5 +1,6 @@
 import React from "react";
 import "./Problematica.css"; // Archivo de estilos
+import Seguridad from "../../assets/images/Riesgos_seguridad.jpg";
 
 const Problematica = () => {
   const problematicas = [
@@ -7,8 +8,7 @@ const Problematica = () => {
       title: "Riesgos de seguridad complejos",
       description:
         "Los sistemas de seguridad tradicionales son reactivos y no previenen efectivamente amenazas como incendios, inundaciones o intrusiones.",
-      backgroundImage:
-        "url('https://via.placeholder.com/800x600/FF5733/FFFFFF')",
+      backgroundImage: Seguridad,
     },
     {
       title: "Ineficiencia energética",
