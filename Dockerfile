@@ -24,8 +24,8 @@ COPY --from=builder /app/dist /usr/share/nginx/html
 # Copiar configuración personalizada de nginx
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Exponer el puerto 5010
-EXPOSE 5010
+# Exponer el puerto 5011
+EXPOSE 5011
 
 # Comando por defecto
 CMD ["nginx", "-g", "daemon off;"]
