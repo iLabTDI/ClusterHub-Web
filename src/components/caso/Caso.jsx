@@ -1,7 +1,7 @@
 import { section } from "framer-motion/client";
 import React from "react";
 import "./Caso.css";
-import Foto from "../../assets/images/incendio.jpg";
+import Foto from "../../assets/images/Incendio.jpg";
 
 function Caso() {
   return (
