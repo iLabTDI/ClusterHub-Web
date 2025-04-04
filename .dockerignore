@@ -1,0 +1,25 @@
+# Node modules (lo reinstalamos dentro del contenedor)
+node_modules
+
+# Build output
+dist
+
+# Logs
+*.log
+npm-debug.log*
+
+# Configuración de entorno (si no quieres incluirla)
+.env
+.env.*.local
+
+# Editor/IDE
+.vscode
+.idea
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
